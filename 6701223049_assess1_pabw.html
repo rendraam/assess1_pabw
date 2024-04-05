@@ -10,5 +10,21 @@
     <img src="foto_rendra.jpeg" width="100px" height="100%"/>
     <p>Nama : Rendra Akbar Maulana</p>
     <p>NIM : 6701223049</p>
+
+    <form id="formBuku">
+        <label for="jumlah">Jumlah :</label>
+        <input type="number" id="jumlah" name="jumlah">
+        <br>
+
+        <label for="buku">Pilih Buku :</label>
+        <select id="buku" name="buku">
+            <option value="sherlock">Sherlock</option>
+            <option value="lupin">Lupin</option>
+            <option value="aladin">Aladin</option>
+        </select>
+        <br>
+
+        <button type="button" onclick="cekKetersediaan()">Enter</button>
+    </form>
 </body>
 </html>
