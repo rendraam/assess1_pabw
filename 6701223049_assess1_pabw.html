@@ -33,11 +33,17 @@
         {"nama": "lupin", "jumlah":2},
         {"nama": "aladin", "jumlah":2},
     ]
-    
+
     //Membuat function
     function cekKetersediaan() {
         let jumlah = document.getElementById('jumlah').value;
         let bukuPilih = document.getElementById('buku').value;
+    }
+
+    //Cek textfield kosong
+    if (jumlah === '') {
+        alert('Jumlah tidak boleh kosong!');
+        return;
     }
 </script>
 </body>
