@@ -48,6 +48,12 @@
 
     // Mencari buku dalam array
     let bukuDitemukan = buku.find(b => b.nama === bukuPilih);
+
+    // Jika ditemukan
+    if (!bukuDitemukan) {
+        alert('Buku tidak ditemukan!');
+        return;
+    }
 </script>
 </body>
 </html>
