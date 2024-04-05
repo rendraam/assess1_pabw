@@ -44,7 +44,10 @@
     if (jumlah === '') {
         alert('Jumlah tidak boleh kosong!');
         return;
-    }
+    } 
+
+    // Mencari buku dalam array
+    let bukuDitemukan = buku.find(b => b.nama === bukuPilih);
 </script>
 </body>
 </html>
