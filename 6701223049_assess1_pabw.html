@@ -38,7 +38,6 @@
     function cekKetersediaan() {
         let jumlah = document.getElementById('jumlah').value;
         let bukuPilih = document.getElementById('buku').value;
-    }
 
     //Cek textfield kosong
     if (jumlah === '') {
@@ -53,6 +52,14 @@
     if (!bukuDitemukan) {
         alert('Buku tidak ditemukan!');
         return;
+    }
+
+    //Cek jumlah buku
+    if (parseInt(jumlah) > bukuDitemukan.jumlah) {
+        alert('Jumlah buku tidak tersedia!');
+    } else {
+        alert('Silahkan ambil buku anda.');
+    }
     }
 </script>
 </body>
