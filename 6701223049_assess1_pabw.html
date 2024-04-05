@@ -27,6 +27,13 @@
         <button type="button" onclick="cekKetersediaan()">Enter</button>
     </form>
 <script>
+    // Menambahkan array buku
+    let buku = [
+        {"nama": "sherlock", "jumlah":2},
+        {"nama": "lupin", "jumlah":2},
+        {"nama": "aladin", "jumlah":2},
+    ]
+    
     //Membuat function
     function cekKetersediaan() {
         let jumlah = document.getElementById('jumlah').value;
